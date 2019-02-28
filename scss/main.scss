@@ -1,0 +1,24 @@
+@import 'Base/_reset.scss';
+
+
+@import 'Abstract/_variable.scss';
+@import 'Base/_normalize.scss';
+@import 'Abstract/_fonts.scss';
+@import 'Abstract/_extend.scss';
+@import 'Abstract/_placeholder.scss';
+@import 'Abstract/_function.scss';
+@import 'Abstract/_animation.scss';
+@import 'Abstract/_mixin.scss';
+
+
+@import 'Component/_button.scss';
+@import 'component/menu';
+@import 'component/curtain';
+@import 'component/line';
+
+@import 'Layouts/_header.scss';
+@import 'layouts/main';
+@import 'Layouts/home';
+@import 'layouts/about';
+@import 'layouts/resume'
+

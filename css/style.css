@@ -1,0 +1,201 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
+
+.menu {
+  width: 200px;
+  background-color: #17181b;
+  height: 100vh;
+  position: fixed; }
+  @media screen and (max-width: 576px) {
+    .menu {
+      display: none; } }
+  .menu .myFace {
+    width: 100%; }
+    .menu .myFace img {
+      width: 100%; }
+  .menu .vertical-menu {
+    width: 200px;
+    /* Set a width if you like */ }
+    .menu .vertical-menu .nav-item {
+      background-color: #17181b;
+      color: black;
+      /* Black text color */
+      display: block;
+      /* Make the links appear below each other */
+      padding: 12px;
+      /* Add some padding */
+      text-decoration: none;
+      /* Remove underline from links */
+      color: #777;
+      text-align: center; }
+      .menu .vertical-menu .nav-item.active {
+        color: white; }
+
+.curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5; }
+
+.coverCurtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: black;
+  opacity: 0;
+  z-index: 10000; }
+
+hr.style-seven {
+  overflow: visible;
+  /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: #777;
+  border-width: 1px 0 0 0;
+  border-radius: 20px; }
+  hr.style-seven::before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #777;
+    border-width: 0 0 1px 0;
+    border-radius: 20px; }
+
+.main {
+  position: absolute;
+  width: auto;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #2c2d2f; }
+  @media screen and (max-width: 576px) {
+    .main {
+      left: 0; } }
+  @media screen and (min-width: 577px) {
+    .main {
+      left: 200px; } }
+  .main .active {
+    opacity: 1; }
+
+.home {
+  width: auto;
+  height: 100vh;
+  background-image: url("../img/home_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0;
+  z-index: 10;
+  overflow: hidden;
+  transition: 0.5s all ease-in-out; }
+  .home .home-content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .home .home-content h1 {
+      font-size: 4rem; }
+      .home .home-content h1 span {
+        color: #26abed;
+        font-size: 4rem; }
+
+.about {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  z-index: -1;
+  padding: 15px;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto; }
+  .about .title {
+    margin-left: 10px; }
+    .about .title h1 {
+      font-weight: bolder;
+      color: #26abed; }
+      @media screen and (max-width: 992px) {
+        .about .title h1 {
+          text-align: center; } }
+    @media screen and (max-width: 992px) {
+      .about .title {
+        margin-left: 0; } }
+  .about .about-content-personal {
+    margin-top: 20px;
+    margin-left: 10px; }
+    @media screen and (max-width: 992px) {
+      .about .about-content-personal {
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      .about .about-content-personal {
+        display: flex; } }
+    .about .about-content-personal .introduce {
+      color: #777; }
+      .about .about-content-personal .introduce h3 {
+        font-weight: bolder;
+        color: #26abed; }
+      @media screen and (max-width: 992px) {
+        .about .about-content-personal .introduce {
+          text-align: center; } }
+      @media screen and (min-width: 992px) {
+        .about .about-content-personal .introduce {
+          width: 40%; } }
+    .about .about-content-personal .personal-info {
+      color: #26abed; }
+      @media screen and (min-width: 992px) {
+        .about .about-content-personal .personal-info {
+          width: 40%; } }
+      .about .about-content-personal .personal-info h3 {
+        font-weight: bolder; }
+        @media screen and (max-width: 992px) {
+          .about .about-content-personal .personal-info h3 {
+            text-align: center; } }
+      .about .about-content-personal .personal-info .info-field {
+        color: #777;
+        margin-bottom: 5px; }
+        .about .about-content-personal .personal-info .info-field .fieldName {
+          color: white; }
+        @media screen and (max-width: 992px) {
+          .about .about-content-personal .personal-info .info-field {
+            text-align: center; } }
+  .about .whatIdo {
+    margin-top: 20px;
+    color: #26abed; }
+    .about .whatIdo h3 {
+      font-weight: bolder;
+      text-align: center; }
+    .about .whatIdo .whatIdo-content .whatIdo-item {
+      text-align: center; }
+      .about .whatIdo .whatIdo-content .whatIdo-item .symbol {
+        font-size: 2rem; }
+      .about .whatIdo .whatIdo-content .whatIdo-item .item-name {
+        font-size: 1.25rem;
+        color: white; }
+
+.resume {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  z-index: -1;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */

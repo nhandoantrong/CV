@@ -1,0 +1,30 @@
+.home{
+    width: auto;
+    height: 100vh;
+    background-image: url('../img/home_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0;
+    z-index: 10;
+    overflow: hidden;
+    .home-content{
+        color: $active-color;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        h1{
+            font-size: $name-title-size;
+            span{
+                color:$secondary-color;
+                font-size: $name-title-size;
+
+            }
+        }
+        
+    }
+    transition: 0.5s all ease-in-out;
+}
+

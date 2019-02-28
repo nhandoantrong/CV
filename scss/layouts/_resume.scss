@@ -1,0 +1,4 @@
+.resume{
+    @include main();
+    color: $active-color;
+}
