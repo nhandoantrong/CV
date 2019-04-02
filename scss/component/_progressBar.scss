@@ -1,0 +1,48 @@
+.progress-title{
+  margin-bottom: 30px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #404144;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+.progress .progress-bar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  background-color: $secondary-color;
+  width: 0;
+  transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -ms-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+}
+.progress .progress-bar:after {
+  content: "";
+  display: block;
+  border: 15px solid transparent;
+  border-bottom: 21px solid transparent;
+  position: absolute;
+  top: -26px;
+  right: -12px;
+  border-bottom-color: $secondary-color;
+}
+.progress .progress-value {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+.skill-item{
+  margin-bottom: 30px;
+}

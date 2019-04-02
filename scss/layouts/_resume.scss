@@ -1,4 +1,149 @@
-.resume{
-    @include main();
-    color: $active-color;
+.resume {
+  @include main();
+  color: $active-color;
+  
+  
+  .title {
+    margin-top: 50px;
+    color: $secondary-color;
+  }
+
+  .resume-content {
+    @include resize();
+    & > div {
+      .title {
+        color: white;
+        text-align: center;
+        padding-bottom: 15px;
+        span {
+          font-size: 1.4rem;
+          padding: 0 5px;
+          border-bottom: 2px $secondary-color solid;
+          position: relative;
+          &::before {
+            content: "";
+            height: 4px;
+            width: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $secondary-color;
+            position: absolute;
+          }
+          &::after {
+            content: "";
+            height: 4px;
+            width: 2px;
+            bottom: 0;
+            right: 0;
+            background-color: $secondary-color;
+            position: absolute;
+          }
+        }
+      }
+
+      .timeline {
+        padding: 0 0 0 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .time-item {
+        position: relative;
+        padding: 20px 0;
+        margin-bottom: 60px;
+        .line-left {
+          position: absolute;
+          width: 2px;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: $secondary-color;
+          &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border: 2px $secondary-color solid;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            left: -4px;
+          }
+          &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border: 2px $secondary-color solid;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            position: absolute;
+            bottom: -10px;
+            left: -4px;
+          }
+        }
+        .content {
+          margin-left: 30px;
+          h4 {
+            margin-bottom: 0;
+            font-weight: bolder;
+          }
+          h5 {
+            color: $secondary-color;
+          }
+          ul {
+            margin: 0;
+            li {
+              list-style-type: none;
+              color: $inactive-color;
+            }
+          }
+        }
+        .year {
+          .to {
+            position: absolute;
+            top: -10px;
+            left: -5px;
+
+            transform: translate(-105%, -50%);
+            -webkit-transform: translate(-105%, -50%);
+            -moz-transform: translate(-105%, -50%);
+            -ms-transform: translate(-105%, -50%);
+            -o-transform: translate(-105%, -50%);
+          }
+          .from {
+            position: absolute;
+            bottom: -10px;
+            left: -5px;
+            transform: translate(-105%, 50%);
+            -webkit-transform: translate(-105%, 50%);
+            -moz-transform: translate(-105%, 50%);
+            -ms-transform: translate(-105%, 50%);
+            -o-transform: translate(-105%, 50%);
+          }
+          @media screen and (max-width: 768px) {
+            .to {
+              transform: translate(15px, -50%);
+              -webkit-transform: translate(15px, -50%);
+              -moz-transform: translate(15px, -50%);
+              -ms-transform: translate(15px, -50%);
+              -o-transform: translate(15px, -50%);
+            }
+            .from {
+              transform: translate(15px, 50%);
+              -webkit-transform: translate(15px, 50%);
+              -moz-transform: translate(15px, 50%);
+              -ms-transform: translate(15px, 50%);
+              -o-transform: translate(15px, 50%);
+            }
+          }
+        }
+      }
+    }
+  }
 }

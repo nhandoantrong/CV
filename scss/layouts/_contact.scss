@@ -1,0 +1,40 @@
+.contact{
+    @include main();
+    color: $active-color;
+    .contact-content{
+        @include resize();
+        margin: 50px auto;
+        .title{
+            color: $secondary-color;
+        }
+        .subtitle{
+            color: white;
+            text-align: center;
+            padding-bottom: 15px;
+            span {
+              font-size: 1.4rem;
+              padding: 0 5px;
+              border-bottom: 2px $secondary-color solid;
+              position: relative;
+              &::before {
+                content: "";
+                height: 4px;
+                width: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $secondary-color;
+                position: absolute;
+              }
+              &::after {
+                content: "";
+                height: 4px;
+                width: 2px;
+                bottom: 0;
+                right: 0;
+                background-color: $secondary-color;
+                position: absolute;
+              }
+            }
+          }
+    }
+}

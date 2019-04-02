@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
 
   <!-- mystyle -->
 
@@ -18,25 +18,29 @@
   <!-- font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <title>Document</title>
+  <title>Doan Trong Nhan CV</title>
 </head>
 
 <body>
-  <section class="menu" id="menu">
+  <section class="menu" id="menu" data-simplebar>
     <div class="vertical-menu">
       <div class="myFace">
-        <img src="./img/myFace.jpg" alt="myFace">
+        <img src="./img/hinh_tui.jpg" alt="myFace">
       </div>
       <a href="#home" class="nav-item active"><i class="fa fa-home"></i><span> Home</span></a>
       <a href="#about" class="nav-item"><i class="fa fa-user"></i><span> About me</span></a>
-      <a href="#resume" class="nav-item"><i class="fa fa-address-card"></i><span> resume</span></a>
+      <a href="#resume" class="nav-item"><i class="fa fa-address-card"></i><span> Resume</span></a>
+      <a href="#portfolio" class="nav-item"><i class="fa fa-briefcase"></i><span> Portfolio</span></a>
+      <a href="#contact" class="nav-item"><i class="fa fa-address-book"></i><span> Contact</span></a>
+
+
 
     </div>
   </section>
 
 
-  <!-- home page -->
   <section class="main">
+    <!-- home page -->
     <div class="home active" id="home">
       <div id="particles-js"></div>
 
@@ -51,92 +55,422 @@
 
 
     <!-- about me -->
-    <div class="about" id="about">
-      <div class="title">
+    <div class="about" id="about" data-simplebar>
+      <div class="about-content">
+        <div class="title">
           <h1>About me</h1>
-      </div>
-      <hr class="style-seven">
-      <div class="about-content-personal">
+        </div>
+        <hr class="style-seven">
+        <div class="about-content-personal">
           <div class="introduce">
             <h3>UI/UX Designer & Developer</h3>
             <p>I'm a Frontend Developer. I'm learning to improve my skills. I aim to be a Full-stack
               Developer and also a Data Scientist.
             </p>
-            <p>My professional objectives are to develop and create good websites for users. Besides programming I have good
+            <p>My professional objectives are to develop and create good websites for users. Besides programming I have
+              good
               communication skills, always deliver on time and Guarantee 100% Satisfaction and Quality
             </p>
           </div>
-            <div class="personal-info ml-auto">
-              <h3>Personal Infomation</h3>
-              <div class="info-field">
-                <span class="fieldName">Name: </span>
-                <span class="fieldValue">Đoàn Trọng Nhân</span>
+          <div class="personal-info ml-auto">
+            <h3>Personal Infomation</h3>
+            <div class="info-field">
+              <span class="fieldName">Name: </span>
+              <span class="fieldValue">Đoàn Trọng Nhân</span>
+            </div>
+            <div class="info-field">
+              <span class="fieldName">Age: </span>
+              <span class="fieldValue" id="myAge">20</span>
+            </div>
+            <div class="info-field">
+              <span class="fieldName">Address: </span>
+              <span class="fieldValue">District 1, Ho Chi Minh city</span>
+            </div>
+            <div class="info-field">
+              <span class="fieldName">Email: </span>
+              <span class="fieldValue">nhandoantrong17498@gmail.com</span>
+            </div>
+            <div class="info-field">
+              <span class="fieldName">Phone: </span>
+              <span class="fieldValue">(+84) 969753827</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="containter whatIdo">
+          <h3>What I do</h3>
+          <div class="row whatIdo-content">
+            <div class="col-lg-3 col-sm-6 whatIdo-item">
+              <div class="symbol">
+                <i class="fa fa-database"></i>
               </div>
-              <div class="info-field">
-                <span class="fieldName">Age: </span>
-                <span class="fieldValue" id="myAge">20</span>
+              <div class="item-name">
+                Database Design
               </div>
-              <div class="info-field">
-                <span class="fieldName">Address: </span>
-                <span class="fieldValue">District 1, Ho Chi Minh city</span>
+            </div>
+            <div class="col-lg-3 col-sm-6 whatIdo-item">
+              <div class="symbol">
+                <i class="fa fa-globe"></i>
               </div>
-              <div class="info-field">
-                <span class="fieldName">Email: </span>
-                <span class="fieldValue">nhandoantrong17498@gmail.com</span>
+              <div class="item-name">
+                Web Design
               </div>
-              <div class="info-field">
-                <span class="fieldName">Phone: </span>
-                <span class="fieldValue">(+84) 969753827</span>
+            </div>
+            <div class="col-lg-3 col-sm-6 whatIdo-item">
+              <div class="symbol">
+                <i class="fa fa-window-restore"></i>
+              </div>
+              <div class="item-name">
+                Responsive Design
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 whatIdo-item">
+              <div class="symbol">
+                <i class="fa fa-gamepad"></i>
+              </div>
+              <div class="item-name">
+                Gamer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end about me -->
+    <!-- resume -->
+
+    <div class="resume" id="resume" data-simplebar>
+
+      <div class="resume-content">
+
+        <div class="title">
+          <h1>My Resume</h1>
+        </div>
+        <hr class="style-seven">
+
+        <!-- Education and experience -->
+        <div class="container">
+          <div class="row">
+
+            <!-- Experience -->
+            <div class="col-lg-6 experience">
+              <h2 class="title"><span>EXPERIENCE</span></h2>
+
+              <div class="timeline">
+
+                <div class="time-item">
+                  <span class="line-left"></span>
+
+
+                  <div class="content">
+                    <h4>Frontend Mentor</h4>
+                    <h5>Cybersoft Academy</h5>
+                    <ul class="info">
+                      <li>
+                        Planning Lessons Supporter
+                      </li>
+                      <li>
+                        Teaching Assistant
+                      </li>
+                      <li>
+                        Website Design Adviser
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="year">
+                    <span class="to">On-going</span>
+                    <span class="from">Dec 2018</span>
+                  </span>
+                </div>
+                <div class="time-item">
+                  <span class="line-left"></span>
+
+
+                  <div class="content">
+                    <h4>Frontend Assistant
+                    </h4>
+                    <h5>HCMIU Software Engineering Group</h5>
+                    <ul class="info">
+                      <li>
+                        Design User Interfaces
+                      </li>
+                      <li>
+                        Support Frontend proplems solving
+                      </li>
+                      <li>
+                        User Interface Advisor
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="year">
+                    <span class="to">On-going</span>
+                    <span class="from">Oct 2018</span>
+                  </span>
+                </div>
+
+                <div class="time-item">
+                  <span class="line-left"></span>
+
+
+                  <div class="content">
+                    <h4>Junior Member
+                    </h4>
+                    <h5>HCMIU Olympiad Group</h5>
+                    <ul class="info">
+                      <li>
+                        Top 89 in The 2017 ACM/ICPC Asia Ho Chi Minh Regional Contest
+                      </li>
+                      <li>
+                        Training coding skills C/C++ by joining weekly pressure contests (3-5h coding contest)
+                      </li>
+                      <li>
+                        Teaching coding skills, data structures and algorithms for fresher members
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="year">
+                    <span class="to">Oct 2018</span>
+                    <span class="from">Nov 2016</span>
+                  </span>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+            <!-- Education -->
+            <div class="col-lg-6 education">
+              <h2 class="title"><span>EDUCATION</span></h2>
+
+              <div class="timeline">
+
+                <div class="time-item">
+                  <span class="line-left"></span>
+
+
+                  <div class="content">
+                    <h4>Bachelors of Computer Science</h4>
+                    <h5>International University</h5>
+                    <ul class="info">
+                      <li>
+                        Second Prize in IU Top Coder 2018
+                      </li>
+                      <li>
+                        University Encouragement Scholarship valued $600 for every semester in 4 years
+                      </li>
+                      <li>
+                        University Partial Scholarship (50%) for 4 years (2016-2020)
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="year">
+                    <span class="to">Oct 2020</span>
+                    <span class="from">Oct 2016</span>
+                  </span>
+                </div>
+
+                <div class="time-item">
+                  <span class="line-left"></span>
+
+
+                  <div class="content">
+                    <h4>Frontend Student</h4>
+                    <h5>Cybersoft Academy</h5>
+                    <ul class="info">
+                      <li>
+                        Design web pages by using HTML5, CSS3, SASS,...
+                      </li>
+                      <li>
+                        Build Single Page App by using ReactJS library and AngularJS Framework
+                      </li>
+                      <li>
+
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="year">
+                    <span class="to">On-going</span>
+                    <span class="from">Oct 2018</span>
+                  </span>
+                </div>
+                <div class="time-item">
+                  <span class="line-left"></span>
+
+
+                  <div class="content">
+                    <h4>Physics Major Student</h4>
+                    <h5>High School For The Gifted</h5>
+                    <ul class="info">
+                      <li>
+                        Third Prize in Ho Chi Minh Excellent student contest
+                      </li>
+                      <li>
+                        High School Encouragement Scholarship valued $100 for the Last Year
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="year">
+                    <span class="to">May 2016</span>
+                    <span class="from">Aug 2013</span>
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container skills">
+
+          <h2 class="title">
+            <span>SKILLS</span>
+          </h2>
+          <div class="row">
+            <div class="col-lg-6 skill-left">
+              <div class="skill-item">
+                <h4 class="progress-title">Data Structure and Algorithm</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="70">
+                    <div class="progress-value">70%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">Object-Oriented Programming</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="70">
+                    <div class="progress-value">70%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">C++</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="70">
+                    <div class="progress-value">70%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">Java</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="70">
+                    <div class="progress-value">70%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">Python</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="50">
+                    <div class="progress-value">50%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">Database Design</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="60">
+                    <div class="progress-value">60%</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-6 skill-right">
+              <div class="skill-item">
+                <h4 class="progress-title">ReactJs/Redux</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="80">
+                    <div class="progress-value">80%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">Javascript</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="80">
+                    <div class="progress-value">80%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">HTML5 + CSS3</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="80">
+                    <div class="progress-value">80%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">SASS</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="80">
+                    <div class="progress-value">80%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">Angular</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="60">
+                    <div class="progress-value">60%</div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="skill-item">
+                <h4 class="progress-title">English (IELTS 6.0)</h4>
+                <div class="progress">
+                  <div class="progress-bar" data-progress-value="70">
+                    <div class="progress-value">70%</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
 
-          <div class="containter whatIdo">
-            <h3>What I do</h3>
-            <div class="row whatIdo-content">
-              <div class="col-lg-3 col-sm-6 whatIdo-item">
-                <div class="symbol">
-                  <i class="fa fa-database"></i>                
-                </div>
-                <div class="item-name">
-                  Database Design
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6 whatIdo-item">
-                <div class="symbol">
-                  <i class="fa fa-globe"></i>
-                </div>
-                <div class="item-name">
-                  Web Design
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6 whatIdo-item">
-                <div class="symbol">
-                  <i class="fa fa-window-restore"></i>
-                </div>
-                <div class="item-name">
-                  Responsive Design
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6 whatIdo-item">
-                <div class="symbol">
-                  <i class="fa fa-gamepad"></i>
-                </div>
-                <div class="item-name">
-                  Gamer
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <!-- end about me -->
-<!-- resume -->
 
-      <div class="resume" id="resume">
-      
+        </div>
       </div>
-      <!-- end resume -->
+
+    </div>
+
+
+    <div class="portfolio" id="portfolio">
+      <div class="portfolio-content">
+        <div class="title">
+          <h1>Portfolio</h1>
+        </div>
+        <hr class="style-seven">
+      </div>
+
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="contact-content">
+        <div class="title">
+          <h1>Contact</h1>
+        </div>
+        <hr class="style-seven">
+        <div class="contact-form">
+          <h2 class="subtitle">
+            <span>LET'S TALK</span>
+          </h2>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- end resume -->
   </section>
 
 
@@ -150,6 +484,8 @@
   <script src="./js/wow.min.js"></script>
   <script src="./js/particles.min.js"></script>
   <script src="./js/particalApp.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+
 
   <!-- my script -->
   <script src="./js//myJs/navBar.js"></script>

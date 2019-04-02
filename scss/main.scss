@@ -15,10 +15,12 @@
 @import 'component/menu';
 @import 'component/curtain';
 @import 'component/line';
+@import 'component/progressBar';
 
 @import 'Layouts/_header.scss';
 @import 'layouts/main';
 @import 'Layouts/home';
 @import 'layouts/about';
-@import 'layouts/resume'
-
+@import 'layouts/resume';
+@import 'layouts/portfolio'; 
+@import 'layouts/contact    '

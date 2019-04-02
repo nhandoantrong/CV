@@ -1,0 +1,11 @@
+.portfolio {
+    @include main();
+    color: $active-color;
+    .portfolio-content{
+        @include resize();
+        .title{
+            color: $secondary-color;
+            margin-top: 50px;
+        }
+    }
+}
